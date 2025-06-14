@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan Ilmu Komputer - One Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======================= GATE LOGIN ======================= -->
+    <div id="login-gate">
+        <div class="login-box">
+            <h2>Selamat Datang</h2>
+            <p>Silakan login untuk mengakses platform pembelajaran.</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="pendidikanilmukomputer" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <p id="login-error" class="error-message"></p>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- ======================= KONTEN UTAMA WEBSITE (One Page Scroll) ======================= -->
+    <div id="app-container" class="hidden">
+        <header>
+            <div class="container">
+                <nav>
+                    <a href="#beranda" class="logo nav-link">Pendidikan IT</a>
+                    <ul>
+                        <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+                        <li><a href="#tentang" class="nav-link">Tentang</a></li>
+                        <li><a href="#materi" class="nav-link">Materi</a></li>
+                        <li><a href="#kursus" class="nav-link">Kursus</a></li>
+                        <li><a href="#blog" class="nav-link">Blog</a></li>
+                        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                        <li><a href="#" id="logout-button">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- BAGIAN BERANDA -->
+            <section id="beranda" class="full-screen">
+                <div class="hero">
+                    <h1>Pendidikan Ilmu Komputer</h1>
+                    <p>Platform terintegrasi untuk belajar fundamental IT. Gulir ke bawah untuk mulai menjelajah.</p>
+                    <a href="#materi" class="cta-button nav-link">Mulai Belajar</a>
+                </div>
+            </section>
+            
+            <!-- BAGIAN TENTANG KAMI -->
+            <section id="tentang" class="page-section">
+                <div class="container">
+                    <h2 class="section-title">Tentang Kami</h2>
+                    <p class="section-subtitle">Platform ini dikembangkan oleh <strong>[Nama Lengkap Anda]</strong> untuk tugas Infrastruktur Teknologi Informasi.</p>
+                    <div class="about-content">
+                        <div>
+                            <h3>Visi Kami</h3>
+                            <p>Menjadi sumber daya pendidikan IT yang mudah diakses dan dipahami oleh semua kalangan di Indonesia.</p>
+                        </div>
+                        <div>
+                            <h3>Misi Kami</h3>
+                            <p>Menyediakan materi pembelajaran yang terstruktur, relevan, dan gratis untuk mendorong inovasi teknologi.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- BAGIAN MATERI PEMBELAJARAN -->
+            <section id="materi" class="page-section bg-light">
+                <div class="container">
+                    <h2 class="section-title">Materi Pembelajaran</h2>
+                    <div class="card-grid">
+                        <div class="card"><h3>Pemrograman Dasar</h3><p>Konsep dasar Python & C++.</p></div>
+                        <div class="card"><h3>Struktur Data & Algoritma</h3><p>Fondasi pemecahan masalah.</p></div>
+                        <div class="card"><h3>Jaringan Komputer</h3><p>Cara kerja internet dan jaringan.</p></div>
+                        <div class="card"><h3>Sistem Operasi</h3><p>Inti dari semua perangkat lunak.</p></div>
+                        <div class="card"><h3>Keamanan Siber</h3><p>Melindungi data di dunia digital.</p></div>
+                        <div class="card"><h3>Kecerdasan Buatan</h3><p>Pengantar Machine Learning.</p></div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- BAGIAN KURSUS (DIPERBARUI DENGAN LINK AKTIF) -->
+            <section id="kursus" class="page-section">
+                <div class="container">
+                    <h2 class="section-title">Kursus & Tutorial</h2>
+                    <div class="card-grid">
+                        <div class="card">
+                            <h3>Python untuk Pemula</h3>
+                            <p>Video tutorial langkah demi langkah.</p>
+                            <a href="https://www.youtube.com/watch?v=kqtD5dpn9C8" target="_blank" rel="noopener noreferrer" class="link-button">Lihat di YouTube</a>
+                        </div>
+                        <div class="card">
+                            <h3>Dasar-dasar Jaringan</h3>
+                            <p>Modul PDF untuk dipelajari mandiri.</p>
+                            <a href="assets/modul-jaringan.pdf" download class="link-button">Unduh Modul</a>
+                        </div>
+                        <div class="card">
+                            <h3>Keamanan Web</h3>
+                            <p>Artikel tentang 10 ancaman teratas.</p>
+                            <a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer" class="link-button">Baca Artikel</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- BAGIAN BLOG -->
+            <section id="blog" class="page-section bg-light">
+                <div class="container">
+                    <h2 class="section-title">Artikel & Blog</h2>
+                    <div class="blog-list">
+                        <article class="blog-item"><h3>Bagaimana Cara Belajar Coding Secara Efektif?</h3><p>Tips praktis untuk pemula agar tidak terjebak dalam "tutorial hell".</p></article>
+                        <article class="blog-item"><h3>Masa Depan AI: Apa yang Perlu Kita Ketahui?</h3><p>Tinjauan singkat tentang tren AI generatif dan dampaknya.</p></article>
+                        <article class="blog-item"><h3>Cloud Computing 101</h3><p>Penjelasan sederhana tentang apa itu cloud dan mengapa itu penting.</p></article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BAGIAN KONTAK -->
+            <section id="kontak" class="page-section">
+                <div class="container">
+                    <h2 class="section-title">Hubungi Kami</h2>
+                    <p class="section-subtitle">Punya pertanyaan atau masukan? Kirimkan melalui form di bawah.</p>
+                    <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST" class="contact-form">
+                        <input type="text" name="name" placeholder="Nama Anda" required>
+                        <input type="email" name="email" placeholder="Email Anda" required>
+                        <textarea name="message" rows="5" placeholder="Pesan Anda" required></textarea>
+                        <button type="submit" class="submit-btn">Kirim Pesan</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 Pendidikan Ilmu Komputer. Dibuat oleh [Nama Lengkap Anda].</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
